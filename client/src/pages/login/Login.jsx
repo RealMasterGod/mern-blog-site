@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault()
         dispatch(loginStart())
         try {
-            const res = await axios.post("/api/auth/login", {username: userRef.current.value,password: passRef.current.value})
+            const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/auth/login`, {username: userRef.current.value,password: passRef.current.value})
             dispatch(loginSuccess(res.data))
         } catch (err) {
             dispatch(loginFailure())

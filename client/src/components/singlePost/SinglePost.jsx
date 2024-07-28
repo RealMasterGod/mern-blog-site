@@ -19,7 +19,7 @@ const SinglePost = () => {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await axios.get(`/api/posts/${path}`)
+                const res = await axios.get(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/posts/${path}`)
                 setPost(res.data)
                 setTitle(res.data.title)
                 setDesc(res.data.desc)
@@ -31,7 +31,7 @@ const SinglePost = () => {
     },[path])
     const handleDelete = async () => {
         try {
-            await axios.delete('/api/posts/'+path, {data: {username:user.username}})
+            await axios.delete(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/posts/`+path, {data: {username:user.username}})
             navigate('/')
         } catch (err) {
             console.log(err)
@@ -39,7 +39,7 @@ const SinglePost = () => {
     }
     const handleUpdate = async () => {
         try {
-            const res = await axios.put(`/api/posts/${post._id}`, {username: user.username, title,desc})
+            const res = await axios.put(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/posts/${post._id}`, {username: user.username, title,desc})
             setUpdateMode(false)
         } catch (err) {
             console.log(err)

@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axios.get('/api/posts'+ search)
+                const res = await axios.get(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/posts`+ search)
                 setPosts(res.data)
             } catch (err) {
                 console.log(err)

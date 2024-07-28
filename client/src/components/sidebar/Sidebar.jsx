@@ -10,7 +10,7 @@ const Sidebar = () => {
     useEffect(() => {
         const fetchCats = async () => {
             try {
-                const res = await axios.get('/api/categories')
+                const res = await axios.get(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/categories`)
                 setCats(res.data)
             } catch (err) {
                 console.log(err)

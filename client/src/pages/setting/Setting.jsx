@@ -44,7 +44,7 @@ const Setting = () => {
             }
         }
         try {
-            const res = await axios.put('/api/users/'+user._id, updatedUser)
+            const res = await axios.put(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/users/`+user._id, updatedUser)
             setSuccess(true)
             dispatch(updateSuccess(res.data))
         } catch (err) {
@@ -56,7 +56,7 @@ const Setting = () => {
     }
     const handleDelete = async () => {
         try {
-            await axios.delete('/api/users/'+user._id, {data: {userId:user._id}})
+            await axios.delete(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/users/`+user._id, {data: {userId:user._id}})
             dispatch(logout())
             navigate('/login')
         } catch (err) {

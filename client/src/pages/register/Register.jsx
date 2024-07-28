@@ -12,7 +12,7 @@ const Register = () => {
         const formData = new FormData(e.currentTarget)
         const {username,email,password} = Object.fromEntries(formData)
         try {
-            const res = await axios.post('/api/auth/register', {username,email,password})
+            const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/auth/register`, {username,email,password})
             res.data && navigate('/login')
         } catch (err) {
             setError(true)

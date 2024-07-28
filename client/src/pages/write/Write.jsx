@@ -36,7 +36,7 @@ const Write = () => {
             }
         }
         try {
-            const res = await axios.post('/api/posts', newPost)
+            const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BASE_URL}api/posts`, newPost)
             navigate(`/post/${res.data._id}`)
         } catch (err) {
             console.log(err)
