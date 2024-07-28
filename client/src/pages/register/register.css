@@ -1,0 +1,59 @@
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.registerTitle {
+    font-size: 50px;
+    /* margin-top: -30px; */
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.registerForm > label {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.registerInput {
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+}
+
+.registerButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.registerLoginButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}

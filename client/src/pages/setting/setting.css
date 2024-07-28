@@ -1,0 +1,102 @@
+.setting {
+    display: flex;
+}
+
+.settingWrapper {
+    flex: 10;
+    padding: 20px;
+}
+
+.settingTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingUpdateTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: lightcoral;
+    text-transform: capitalize;
+}
+
+.settingDeleteTitle {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: crimson;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Lora',sans-serif;
+    font-weight: 700;
+}
+
+.settingForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.settingPP {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.settingPP > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.settingPPIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:thistle;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    /* font-size: 20px; */
+    cursor: pointer;
+}
+
+.settingForm > label {
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.settingForm > input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgreen;
+    color: grey;
+}
+
+.settingForm > textarea {
+    border: none;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-bottom: 1px solid lightgreen;
+    color: grey;
+}
+
+.settingForm > input:focus,.settingForm > textarea:focus {
+    outline: none;
+} 
+
+.settingSubmit {
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: darkgreen;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
