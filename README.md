@@ -74,7 +74,10 @@ Refer to https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
   npm run dev
   ```
 - Similarly open terminal in client folder and also create a .env file where you have to create a variable REACT_APP_BASE_URL and assign the url your api is running on.
-- Now in client folder just run the above two commands.
+- Now in client folder just run:
+  ```bash
+  npm install && npm run dev
+  ```
 - Now just click/copy the link that would appear in the console and paste on your browser and hit enter. That's it you can now see the project on your local machine.
 
 # 5. Status
