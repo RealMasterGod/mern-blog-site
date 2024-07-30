@@ -15,7 +15,8 @@ Blogs may have categories so users and query all blogs of a particular category.
 Users can also update their account.
 
 # 2. Technologies
-I have used  ReactJs, Vite to create the frontend and it uses context Api
+I have used  ReactJs, Vite to create the frontend and it uses context API.
+The backend is done in Node/ExpressJs and it uses mongodb as database.
 
 ## React + Vite
 
@@ -32,25 +33,30 @@ npm create vite@latest --your-app-name -- --template react
 ```
 Or you may refer to https://vitejs.dev/guide/   for more details.
 
-## Redux Tookit
-Learn more about redux toolkit
-- https://redux-toolkit.js.org/
-- To use redux in your projects just run the following commands:
-  ```bash
-  npm install react-redux @reduxjs/toolkit
-  ```
+## NodeJs
 
-## Material UI Icons
-Material UI icons are easy to use and provides a ton of choices for each icon. Chances are if you are looking for 
-an icon, they have it.
+NodeJs has become a popular choice for writing backend. It has many advantages but the most convienent is that it let's us write backend in JavaScript
+Refer to https://nodejs.org/en to learn more about it
 
-Refer to the offical site to get started with material ui : https://mui.com/material-ui/getting-started/
+## ExpressJs
 
-## Styled Components
-Styled components make it much easier to write css and the option to pass props from the components makes it
-a powerful tool for conditional css rendering rules. I prefer it over plain css.
+It is a web framework for node.js. Writing backend in plain Node.js is possible, however it'd a tiresome job, using express.js makes it easier and faster 
+to work with node.js
+To add it to your project use:
+```bash
+npm i express
+```
+Learn about express.js https://expressjs.com/
 
-Getting started with styled components : https://styled-components.com/docs
+## MongoDb
+
+A nosql database that is popular nowadays is mongodb specially when it comes to node.js.
+To add it to your project use:
+```bash
+npm i mongoose
+```
+Refer to https://mongoosejs.com/ for more information
+
 
 # 3. Prerequisites
 ## Install Node Package Manager
@@ -59,6 +65,7 @@ Refer to https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 # 4. Setup
 - Clone the repository or download as zip.
 - Go to the cloned folder on your local machine.
+- Open terminal in api folder and also create a .env file where you have to create a variable MONGODB_URI and assign your mongodb database to this. 
 - Open terminal and run the following commands in order.
   ```bash
   npm install
@@ -66,8 +73,10 @@ Refer to https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
   ```bash
   npm run dev
   ```
+- Similarly open terminal in client folder and also create a .env file where you have to create a variable REACT_APP_BASE_URL and assign the url your api is running on.
+- Now in client folder just run the above two commands.
 - Now just click/copy the link that would appear in the console and paste on your browser and hit enter. That's it you can now see the project on your local machine.
 
 # 5. Status
-The project is completed. Further updates may only be minor bug fixes.
+The project is almost complete. There may be minor things that I can do and I will do when I get time.
 
